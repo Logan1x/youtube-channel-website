@@ -37,3 +37,9 @@ def comptech(request):
 def tricktech(request):
     usr = form_submission.objects.all()
     return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+
+
+
+def nodata(request):
+    return render(request, "ytsite/nodata.html")
+
