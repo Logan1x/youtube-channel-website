@@ -94,48 +94,83 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <link rel="shortcut icon" href="{% static 'images/information.svg' %}" />
-    <meta http-equiv="refresh" content="2;URL={% url 'aboutus' %}" />
-    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+    <style>
+        .navbar {
+            font-family: 'Montserrat';
+            font-size: 20px;
+        }
+        
+        body {
+            font-family: 'Montserrat';
+        }
+        
+        .bg-1 {
+            background-color: #ffffff;
+            /* White */
+            color: #555555;
+        }
+        
+        .bg-2 {
+            background-color: #474e5d;
+            /* Dark Blue */
+            color: #ffffff;
+        }
+        
+        .container-fluid {
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        
+        .sofia {
+            font-family: 'sofia';
+            font-size: 40px;
+        }
+        
+        footer {
+            background-color: #1abc9c;
+            /* Green */
+            color: #ffffff;
+        }
+        
+        .makewhite {
+            color: #ffffff;
+        }
+    </style>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Cse and Me Guys</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Youtube <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div class="container">
-        <br><br><br>
+    <div class="container-fluid bg-1 text-center">
+        <br><br>
         <div>
             <center><img src="{% static 'images/team.svg' %}" style="height: 350px; width: 50%;"></center>
         </div>
-        <center>
-            <div class="spinner-border" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </center>
 
         <center>
-            <h1>Meet Khushal & Vishal</h1>
+            <h1 class="sofia">Meet Khushal & Vishal</h1>
         </center>
+    </div>
+    <div class="container-fluid bg-2 text-center">
+        <h3>What Do we do?</h3>
+        <p>Welcome to Cse & Me Guys, Here you'll find knowledge of Mechanical engineering and Computer science. So, if you're preparing for Gate Examination, State-level Examination, PSU's, SSC, JEE, BARC, DRDO, General Aptitude and SOLIDWORKS design then
+            you will find valuable information about all of these examination. Also, stay tuned! As we provide the notification regarding exams mentioned above, so it'll be more reliable for you to get all information and study material at one place.</p>
     </div>
 
     <!-- Optional JavaScript -->
@@ -144,5 +179,48 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+
+        <!-- Social buttons -->
+        <ul class="list-unstyled list-inline text-center">
+            <li class="list-inline-item">
+                <a class="btn-floating btn-fb mx-1">
+                    <i class="fa fa-youtube-play" style="font-size:36px"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-tw mx-1">
+                    <i class="fa fa-twitter" style="font-size:36px"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-gplus mx-1">
+                    <i class="fa fa-telegram" style="font-size:36px"></i>
+                </a>
+            </li>
+            <li class="list-inline-item">
+                <a class="btn-floating btn-li mx-1">
+                    <i class="fa fa-facebook-square" style="font-size:36px"></i>
+                </a>
+            </li>
+        </ul>
+        <!-- Social buttons -->
+
+    </div>
+    <!-- Footer Elements -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="/" class="makewhite"> Cse and Me Guys</a>
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 </html>
