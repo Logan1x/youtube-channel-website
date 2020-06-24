@@ -1,61 +1,74 @@
 {% load static %}
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
-        <title>About Us</title>
-        <link rel="shortcut icon" href="{% static 'images/information.svg' %}" />
-    </head>
-	<style>
-        .sofia {
-            font-family: 'Barrio';font-size: 35px;
-        }
-        </style>
-    <body>
-	 <div class="w3-bar w3-grey">
-		<a href="#" class="w3-bar-item w3-button w3-mobile w3-blue">Home</a>
-		<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
-		<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
-    	<div class="w3-dropdown-hover w3-mobile">
-      		<button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>
-			  <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-				<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
-				<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
-				<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
-			  </div>
-    	</div>
-  </div>
-        <br/><br/>
-        <div >
-            <img src ="{% static 'images/comp.svg' %}" class="center" style="height: 150px; width: 50%;" >
-        </div>
-        <center><h1 class="sofia">CSE & ME GUYS</h1>
-            <div >
-                <img src ="{% static 'images/saw.svg' %}" class="center" style="height: 90px; width: 50%;" >
+
+<head>
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="{% static 'images/information.svg' %}" />
+</head>
+<style>
+    .sofia {
+        font-family: 'Barrio';
+        font-size: 35px;
+    }
+    
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    h1,
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+        </button>
+                <a class="navbar-brand" href="/">Cse and Me Guys</a>
             </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">WHO</a></li>
+                    <li><a href="#">WHAT</a></li>
+                    <li><a href="#">WHERE</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <img src="{% static 'images/comp.svg' %}" class="center" style="height: 150px; width: 50%;">
+    </div>
+    <center>
+        <h1 class="sofia">CSE & ME GUYS</h1>
+        <div>
+            <img src="{% static 'images/saw.svg' %}" class="center" style="height: 90px; width: 50%;">
+        </div>
         <br/><br/>
         <div class="jumbotron text-center">
             <h1 class="display-4">Greetings!</h1>
-            <p class="lead"><strong>Welcome to Cse & Me Guys, Here you'll find knowledge of Mechanical engineering and Computer science. So, if you're preparing for Gate Examination, State-level Examination, PSU's, SSC, JEE, BARC, DRDO, General Aptitude and SOLIDWORKS design then you will find valuable information about all of these examination. Also, stay tuned! As we provide the notification regarding exams mentioned above, so it'll be more reliable for you to get all information and study material at one place. </strong> Stay tuned :)</p>
+            <p class="lead"><strong>Welcome to Cse & Me Guys, Here you'll find knowledge of Mechanical engineering and Computer science. So, if you're preparing for Gate Examination, State-level Examination, PSU's, SSC, JEE, BARC, DRDO, General Aptitude and SOLIDWORKS design then you will find valuable information about all of these examination. Also, stay tuned! As we provide the notification regarding exams mentioned above, so it'll be more reliable for you to get all information and study material at one place. </strong>                Stay tuned :)</p>
             <hr>
             <p class="lead">
-              <a class="btn btn-primary btn-sm" href="{% url 'index' %}"  role="button">Continue to homepage</a>
+                <a class="btn btn-primary btn-sm" href="{% url 'index' %}" role="button">Continue to homepage</a>
             </p>
-          </div>
-        
-        <style>
-                .center 
-                {
-                    display: block;
-                    margin-left: auto;
-                    margin-right: auto;
-                    width: 50%;
-                }
+        </div>
+    </center>
+</body>
 
-                h1, p
-                {
-                    text-align: center;
-                }
-        </style>
+</html>
