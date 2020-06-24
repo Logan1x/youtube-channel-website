@@ -9,6 +9,9 @@ def index(request):
 def about(request):
     return render(request, "ytsite/about.html")
 
+def aboutus(request):
+    return render(request, "ytsite/about1.html")
+
 def create_form(request):
 	return render(request, "ytsite/upload.html")
 # Create your views here. 

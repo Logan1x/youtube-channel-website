@@ -8,9 +8,17 @@
     <title>Playlist Section</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href="{% static 'css/style.css' %}" />
     <link rel="shortcut icon" href="{% static 'images/playlist.svg' %}" />
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
 </head>
+<style>
+    .sofia {
+        font-family: 'Barrio';font-size: 20px;
+    }
+    </style>
 
 <body>
 
@@ -35,7 +43,7 @@
                     <img src="static/images/8.jpg" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Comp_Tech</h5>
-                        <p class="card-text">This is a playlist for computer tech</p>
+                        <p class="card-text">This is a playlist for Computer tech</p>
                         <a href="{% url 'comptech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
@@ -64,6 +72,13 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
 </body>
+<footer>
+    <center >
+        <p class="sofia">Made with love  <i class="material-icons" style="color:red;">favorite</i>  by Parth and Khushal </p>
+    
+    </center>
+</footer>
 
 </html>

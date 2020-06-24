@@ -9,5 +9,6 @@ urlpatterns = [
     path('comptech/', views.comptech, name = "comptech"),
     path('tricktech/', views.tricktech, name = "tricktech"),
     path('mechtech/', views.mechtech, name = "mechtech"),
-    path('nodata/', views.nodata, name='nodata')
+    path('nodata/', views.nodata, name='nodata'),
+    path('aboutus/', views.aboutus, name='aboutus')
 ]
