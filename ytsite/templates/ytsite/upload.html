@@ -9,59 +9,55 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-    </script>
-
-    <link rel='stylesheet' href="{% static 'css/style.css' %}" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- <link rel='stylesheet' href="{% static 'css/style.css' %}" /> -->
     <link rel="shortcut icon" href="{% static 'images/upload.svg' %}" />
+    <style>
+        .navbar {
+            font-family: 'Montserrat';
+            font-size: 20px;
+        }
+        
+        .marginbottom {
+            margin-top: 20%;
+        }
+        
+        .container {
+            margin-top: 7%;
+        }
+    </style>
 </head>
 
 <body>
-
- <div class="w3-bar w3-grey">
-		<a href="#" class="w3-bar-item w3-button w3-mobile w3-blue">Home</a>
-		<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
-		<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
-    	<div class="w3-dropdown-hover w3-mobile">
-      		<button class="w3-button">Dropdown <i class="fa fa-caret-down"></i></button>
-			  <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
-				<a href="#" class="w3-bar-item w3-button w3-mobile">Link 1</a>
-				<a href="#" class="w3-bar-item w3-button w3-mobile">Link 2</a>
-				<a href="#" class="w3-bar-item w3-button w3-mobile">Link 3</a>
-			  </div>
-    	</div>
-  </div>
-
     {% if user.is_authenticated %} {% if form.errors %}
     <p>There's something wrong with what you entered!</p>
     {% endif %} {% if next %}
     <p>Hey, you can't access that page.</p>
     {% endif %}
-    <nav class="navbar navbar-expand-sm bg-light">
-
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#"> 
-                  About 
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"> 
-                  Contacts 
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'logout' %}"> 
-                  Logout
-                </a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Cse and Me Guys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Youtube <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}"> 
+                      Logout
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <div class="container d-flex h-100">
@@ -106,27 +102,30 @@
     </div>
     <div class="container">
         {%else%}
-        <nav class="navbar navbar-expand-sm bg-light">
-
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> 
-                      About 
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> 
-                      Contacts 
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'login' %}"> 
-                      Login
-                    </a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Cse and Me Guys</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Youtube <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login' %}"> 
+                          Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-        <h3> Please <a href="{% url 'login' %}">Login</a> to proceed further</h3>
+        <center>
+            <h3 class="marginbottom"> Please <a href="{% url 'login' %}">Login</a> to proceed further</h3>
+        </center>
         {% endif %}
     </div>
 </body>
