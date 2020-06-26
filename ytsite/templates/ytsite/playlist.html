@@ -5,10 +5,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playlist Section</title>
+    <title>Cse and Me Guys</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel='stylesheet' href="{% static 'css/style.css' %}" />
     <link rel="shortcut icon" href="{% static 'images/playlist.svg' %}" />
@@ -16,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <style>
-    .sofia {
-        font-family: 'Barrio';
+    .Montserrat {
+        font-family: 'Montserrat';
         font-size: 20px;
     }
     
@@ -26,18 +24,26 @@
         font-size: 20px;
         background-color: black;
     }
+    
+    .navbar-brand {
+        font-size: 22px;
+    }
+    
+    .mkwhite {
+        color: black;
+    }
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#">Cse and Me Guys</a>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="/">Cse and Me Guys</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Youtube <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCiLbuCBOECNHassJYvCR4tg" target="_blank">Youtube <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -47,36 +53,6 @@
     </nav>
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3">
-
-
-            <div class="col mb-5" onclick="location.href='{% url 'comptech' %}';" style="cursor: pointer;">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Comp_Tech</h5>
-                        <p class="card-text">This is a playlist for Computer tech</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5" onclick="location.href='{% url 'mechtech' %}';" style="cursor: pointer;">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Mech_Tech</h5>
-                        <p class="card-text">This is a playlist for Mechanical tech</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5" onclick="location.href='{% url 'tricktech' %}';" style="cursor: pointer;">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Tricks_Tech</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                    </div>
-                </div>
-            </div>
-
             <!-- playlist starts here -->
             <div class="col mb-5" onclick="location.href='{% url 'solidworks' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
@@ -194,7 +170,12 @@
 </body>
 <footer>
     <center>
-        <p>Made with love <i class="material-icons" style="color:red;">favorite</i> by Parth and Khushal </p>
+        <style>
+            .heart {
+                color: #e25555;
+            }
+        </style>
+        <p class="Montserrat">Made with <span class="heart">❤</span> by <u><a class="mkwhite" href="https://twitter.com/Pandyaparthppp" target="_blank">Parth</a></u> and <u><a class="mkwhite" href="https://twitter.com/herkuch" target="_blank">Khushal</a></u></p>
 
     </center>
 </footer>

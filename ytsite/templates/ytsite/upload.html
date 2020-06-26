@@ -8,18 +8,13 @@
     <title>Upload New Card</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <!-- <link rel='stylesheet' href="{% static 'css/style.css' %}" /> -->
     <link rel="shortcut icon" href="{% static 'images/upload.svg' %}" />
     <style>
         .navbar {
             font-family: 'Montserrat';
             font-size: 20px;
+            background-color: black;
         }
         
         .marginbottom {
@@ -38,7 +33,7 @@
     {% endif %} {% if next %}
     <p>Hey, you can't access that page.</p>
     {% endif %}
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/">Cse and Me Guys</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -46,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Youtube <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCiLbuCBOECNHassJYvCR4tg" target="_blank">Youtube <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -69,21 +64,18 @@
                     <div class="form-group">
                         <label for="playlist">Choose Playlist : </label>
                         <select name="playlist">
-                                <option value="Comp_tech">Comp_tech</option>
-                                <option value="Mech_Tech">Mech_Tech</option>
-                                <option value="Trick_Tech">Trick_Tech</option>
-                                <option value="Trick_Tech">Solid-Works Tutorials</option>
-                                <option value="Trick_Tech">Need a Help with a problem</option>
-                                <option value="Trick_Tech">Gate mechanical engineering-Mathematics</option>
-                                <option value="Trick_Tech">Operation Research Solution</option>
-                                <option value="Trick_Tech">Technology and Engineering</option>
-                                <option value="Trick_Tech">Google code in</option>
-                                <option value="Trick_Tech">Gate Questions Which I did Wrong Today</option>
-                                <option value="Trick_Tech">Strength of Material</option>
-                                <option value="Trick_Tech">Slo-Mo</option>
-                                <option value="Trick_Tech">Python Experiments</option>
-                                <option value="Trick_Tech">GATE Mechanical engineering-Thermodynamics</option>
-                                <option value="Trick_Tech">Bloging With Hexo</option>
+                                <option value="solidworks">Solid-Works Tutorials</option>
+                                <option value="needhelp">Need a Help with a problem</option>
+                                <option value="ors">Operation Research Solution</option>
+                                <option value="tech">Technology and Engineering</option>
+                                <option value="gci">Google code in</option>
+                                <option value="slomo">Slo-Mo</option>
+                                <option value="methermo">GATE Mechanical engineering-Thermodynamics</option>
+                                <option value="gatecs">Gate Questions Which I did Wrong Today</option>
+                                <option value="memechanical">Gate mechanical engineering-Mathematics</option>
+                                <option value="som">Strength of Material</option>
+                                <option value="bloging">Bloging With Hexo</option>
+                                <option value="python">Python Experiments</option>
                             </select>
                     </div>
                     <div class="form-group">
@@ -98,6 +90,7 @@
                     <div class="form-group">
                         <label for="exampleFormControlFile1">Choose 1920 X 1080 image from your computer</label>
                         <input type="file" name="image" class="form-control-file" id="imageupload" required>
+                        <small class="form-text text-muted">Keep the image size 334 X 187 and compress it as much as you can.</small>
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Youtube Video Link</label>
@@ -114,7 +107,7 @@
     </div>
     <div class="container">
         {%else%}
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="/">Cse and Me Guys</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -122,7 +115,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Youtube <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="https://www.youtube.com/channel/UCiLbuCBOECNHassJYvCR4tg" target="_blank">Youtube <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'about' %}">About</a>
@@ -140,6 +133,9 @@
         </center>
         {% endif %}
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

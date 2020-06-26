@@ -1,12 +1,59 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-  </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Experiments</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel='stylesheet' href="{% static 'css/style.css' %}" />
+    <link rel="shortcut icon" href="{% static 'images/magic.svg' %}" />
+    <style>
+        .navbar {
+            font-family: 'Montserrat';
+            font-size: 20px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="/">Cse and Me Guys</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.youtube.com/channel/UCiLbuCBOECNHassJYvCR4tg" target="_blank">Youtube <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+            {% for p in usr %} {% if 'python' in p.playlist %}
+            <div class="col mb-5" onclick=" location.href='{{ p.url }}' ; " style="cursor: pointer; ">
+                <div class="card " style="width: 21rem; ">
+                    <img src="{{p.photo.url}} " class="card-img-top " alt="card six ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">{{p.card_name}}</h5>
+                        <p class="card-text ">{{p.card_text}}</p>
+                    </div>
+                </div>
+            </div>
+            {% endif %} {% endfor %}
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js " integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+</body>
+
 </html>

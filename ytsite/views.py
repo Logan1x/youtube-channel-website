@@ -31,66 +31,50 @@ def nodata(request):
 
 
 #playlist starts here
-
-def mechtech(request):
-    usr = form_submission.objects.all()
-    return render(request, "ytsite/mech_tech.html", {'usr' : usr})
-
-
-def comptech(request):
-    usr = form_submission.objects.all()
-    return render(request, "ytsite/comp_tech.html", {'usr' : usr})
-
-
-def tricktech(request):
-    usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
-
-
 def solidworks(request):
     usr = form_submission.objects.all()
     return render(request, "ytsite/solidworks.html", {'usr' : usr})
 
 def needhelp(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/needhelp.html", {'usr' : usr})
 
 def ors(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/ors.html", {'usr' : usr})
 
 def tech(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/tech.html", {'usr' : usr})
 
 def gci(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/gci.html", {'usr' : usr})
 
 def slomo(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/slomo.html", {'usr' : usr})
 
 def methermo(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/methermo.html", {'usr' : usr})
 
 def gatecs(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/gatecs.html", {'usr' : usr})
 
 def memechanical(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/memechanical.html", {'usr' : usr})
 
 def som(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/som.html", {'usr' : usr})
 
 def bloging(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/bloging.html", {'usr' : usr})
 
 def python(request):
     usr = form_submission.objects.all()
-    return render(request, "ytsite/trick_tech.html", {'usr' : usr})
+    return render(request, "ytsite/python.html", {'usr' : usr})

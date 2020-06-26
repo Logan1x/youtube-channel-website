@@ -6,10 +6,6 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('upload/', views.create_form, name='upload'),
     path('created/', views.created, name = "created"),
-    path('comptech/', views.comptech, name = "comptech"),
-    path('tricktech/', views.tricktech, name = "tricktech"),
-    path('mechtech/', views.mechtech, name = "mechtech"),
-    path('nodata/', views.nodata, name='nodata'),
     # playlist starts here
     path('solidworks/', views.solidworks, name = "solidworks"),
     path('needhelp/', views.needhelp, name = "needhelp"),
