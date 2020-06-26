@@ -24,11 +24,12 @@
     .navbar {
         font-family: 'Montserrat';
         font-size: 20px;
+        background-color: black;
     }
 </style>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">Cse and Me Guys</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -48,153 +49,140 @@
         <div class="row row-cols-1 row-cols-md-3">
 
 
-            <div class="col mb-5">
+            <div class="col mb-5" onclick="location.href='{% url 'comptech' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
                     <img src="static/images/8.jpg" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Comp_Tech</h5>
                         <p class="card-text">This is a playlist for Computer tech</p>
-                        <a href="{% url 'comptech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5" onclick="location.href='{% url 'mechtech' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
                     <img src="static/images/8.jpg" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Mech_Tech</h5>
                         <p class="card-text">This is a playlist for Mechanical tech</p>
-                        <a href="{% url 'mechtech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5" onclick="location.href='{% url 'tricktech' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
                     <img src="static/images/8.jpg" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Tricks_Tech</h5>
                         <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+
+            <!-- playlist starts here -->
+            <div class="col mb-5" onclick="location.href='{% url 'solidworks' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
+                    <img src="static/images/solidworks.gif" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Solid-Works Tutorials</h5>
                         <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5" onclick="location.href='{% url 'needhelp' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Bloging With Hexo</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Operation Research Solution</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">GATE Mechanical engineering-Thermodynamics</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Gate mechanical engineering-Mathematics</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Google code in</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Strength of Material</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
-                    <div class="card-body">
-                        <h5 class="card-title">Gate Questions Which I did Wrong Today</h5>
-                        <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
+                    <img src="static/images/need a help wih problem.gif" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Need a Help with a problem</h5>
                         <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5" onclick="location.href='{% url 'ors' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
+                    <img src="static/images/opration.gif" class="card-img-top" alt="card six">
                     <div class="card-body">
-                        <h5 class="card-title">Slo-Mo</h5>
+                        <h5 class="card-title">Operation Research Solution</h5>
                         <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
-                <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
+            <div class="col mb-5" onclick="location.href='{% url 'tech' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem; ">
+                    <img src="static/images/technology.gif" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Technology and Engineering</h5>
                         <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
-            <div class="col mb-5">
+            <div class="col mb-5" onclick="location.href='{% url 'gci' %}';" style="cursor: pointer;">
                 <div class="card" style="width: 21rem;">
-                    <img src="static/images/8.jpg" class="card-img-top" alt="card six">
+                    <img src="static/images/google code in.gif" class="card-img-top" alt="card six">
+                    <div class="card-body">
+                        <h5 class="card-title">Google code in</h5>
+                        <p class="card-text">This is a playlist for Tricks tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" onclick="location.href='{% url 'slomo' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem;">
+                    <img src="static/images/slomo.gif" class="card-img-top" alt="card six">
+                    <div class="card-body">
+                        <h5 class="card-title">Slo-Mo</h5>
+                        <p class="card-text">This is a playlist for Tricks tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" onclick="location.href='{% url 'methermo' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem;">
+                    <img src="static/images/thermo.gif" class="card-img-top" alt="card six">
+                    <div class="card-body">
+                        <h5 class="card-title">GATE Mechanical engineering-Thermodynamics</h5>
+                        <p class="card-text">This is a playlist for Tricks tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" onclick="location.href='{% url 'gatecs' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem;">
+                    <img src="static/images/gate question did wrong today.gif" class="card-img-top" alt="card six">
+                    <div class="card-body">
+                        <h5 class="card-title">Gate Questions Which I did Wrong Today</h5>
+                        <p class="card-text">This is a playlist for Tricks tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" onclick="location.href='{% url 'memechanical' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem;">
+                    <img src="static/images/maths.gif" class="card-img-top" alt="card six">
+                    <div class="card-body">
+                        <h5 class="card-title">Gate mechanical engineering-Mathematics</h5>
+                        <p class="card-text">This is a playlist for Tricks tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" onclick="location.href='{% url 'som' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem;">
+                    <img src="static/images/som.gif" class="card-img-top" alt="card six">
+                    <div class="card-body">
+                        <h5 class="card-title">Strength of Material</h5>
+                        <p class="card-text">This is a playlist for Tricks tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" onclick="location.href='{% url 'bloging' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem;">
+                    <img src="static/images/blogging.gif" class="card-img-top" alt="card six">
+                    <div class="card-body">
+                        <h5 class="card-title">Bloging With Hexo</h5>
+                        <p class="card-text">This is a playlist for Tricks tech</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col mb-5" onclick="location.href='{% url 'python' %}';" style="cursor: pointer;">
+                <div class="card" style="width: 21rem;">
+                    <img src="static/images/python.gif" class="card-img-top" alt="card six">
                     <div class="card-body">
                         <h5 class="card-title">Python Experiments</h5>
                         <p class="card-text">This is a playlist for Tricks tech</p>
-                        <a href="{% url 'tricktech' %}" class="btn btn-dark">Enter into this playlist...</a>
                     </div>
                 </div>
             </div>
